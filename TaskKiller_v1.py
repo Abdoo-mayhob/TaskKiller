@@ -16,16 +16,18 @@ list_of_services_to_kill = [
 ]
 
 
-def Task_Killer():
+def intro():
     print("Custome_Task_Killer_v0.py")
     print("This Script Was Made By AbDoO_")
     print("2020 - 3 - 14 23:24")
     print("--------------------------------")
 
+
+def Task_Killer():
     import psutil
     for proc in psutil.process_iter():
         try:
-            if not "System" in str(proc.name):
+            if not "System" in str(proc.name):     # if the procces is not a system procces
                 for i in list_of_programs_to_kill:
                     if  i in str(proc.name):
                         proc.kill()
@@ -34,6 +36,7 @@ def Task_Killer():
             print('Error:',e)
 
     print('Done !  Have Fun <>_<>  <3')
+
 
 def Services_Stopper():
     import subprocess
@@ -53,9 +56,11 @@ def is_admin():
 
 
 if is_admin():
+    intro()
     Task_Killer()
     Services_Stopper()
-    x = input()
+    x = input() # Pasue the screen
+    
 else:
     # Re-run the program with admin rights
     ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
