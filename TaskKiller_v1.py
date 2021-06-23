@@ -1,4 +1,4 @@
-# Custome_Task_Killer_v0
+# TaskKiller v1
 # MadeBy: AbDoO_
 # 2020 - 3 - 14 23:24
 #------------------------
@@ -17,7 +17,7 @@ list_of_services_to_kill = [
 
 
 def intro():
-    print("Custome_Task_Killer_v0.py")
+    print("TaskKiller v1")
     print("This Script Was Made By AbDoO_")
     print("2020 - 3 - 14 23:24")
     print("--------------------------------")
