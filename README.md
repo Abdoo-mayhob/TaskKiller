@@ -11,6 +11,8 @@ Python script to stop/kill background tasks and services that consume too much C
 ### The problem
 Some Tasks/Services in Win10 and Win7 auto-run on the computer and start consuming the computer resourses. We usualy head over to Task Manager and manulay stop them one by one. But sometimes they auto-restart and you can't simply prevint the auto-start for some reason.
 
+![Screenshot_Before](https://github.com/Abdoo-mayhob/TaskKiller/blob/main/Screenshot_Before.png)
+
 ### The solution
 We basicly automated the "go over to task manager and kill each proccess/sevice one by one" part. It's now just one click and python does the rest for us. 
 
