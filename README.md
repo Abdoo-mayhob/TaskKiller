@@ -16,6 +16,7 @@ _In this screenshot "Delivery Optimization" Service and "Microsoft Office Click-
 
 ### The solution
 We basicly automated the "go over to task manager and kill each proccess/sevice one by one" part. It's now just one click and python does the rest for us. 
+
 _In this screenshot "Delivery Optimization" Service and "Microsoft Office Click-to-Run" got sotped along with some other process I defined earlier in TaskKiller_v1.py . Thus freeing up Cpu usage, Ram and internet usage_
 ![Screenshot_After](https://github.com/Abdoo-mayhob/TaskKiller/blob/main/Screenshot_After.png)
 
